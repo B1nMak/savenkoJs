@@ -6,7 +6,7 @@ function isIsogram (str){
             result += str[i]
         }
     }
-    return result 
+    return result === str
 }
 
 console.log(isIsogram)

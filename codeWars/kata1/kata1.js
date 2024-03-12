@@ -1,13 +1,12 @@
-
 const uS = 'ZpglnRxqenU'
 
-function acum(sentanse){
+function acum(s){
     let result = '';
-    for(let i = 0; i < sentanse.length; i++){
-        result +=`${sentanse[i].toUpperCase()}`+`${sentanse[i].toLowerCase().repeat(i)}`
-        
+    for(let i = 0; i < s.length; i++){
+        result +=`-${s[i].toUpperCase()}`+`${s[i].toLowerCase().repeat(i)}`
     }
-    return result
+    
+    return result.replace('-','')
 }
 
 console.log(acum(uS))
