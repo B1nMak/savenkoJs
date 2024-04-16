@@ -1,7 +1,5 @@
-const numbers =("1 2 3 4 5");
-function highAndLow (num){
-    num = num.sort(' ')
-    return num 
+const num =("1 2 3 4 5");
+function highAndLow(numbers){
+    return `${Math.max(...numbers.split(" "))} ${Math.min(...numbers.split(" "))}`;
 }
-console.log(num)
-console.log(highAndLow(numbers))
+console.log(highAndLow(num))
